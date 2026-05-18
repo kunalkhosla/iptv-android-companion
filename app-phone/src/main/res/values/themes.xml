@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- colorPrimary must be opaque or MediaRouteButton's constructor
+         crashes computing contrast against #0. Set to the Marquee
+         accent so the cast picker's tinted bits stay on-brand. -->
+    <style name="Theme.KhouchPhone" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorPrimary">#F08245</item>
+        <item name="android:colorAccent">#F08245</item>
+    </style>
+</resources>
