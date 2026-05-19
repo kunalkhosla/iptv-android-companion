@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Debug builds only: allow cleartext HTTP so we can point the
+         app at a local Node server during development (the production
+         server runs HTTPS via Traefik so the release build keeps the
+         default cleartext-blocked policy). -->
+    <application
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic" />
+</manifest>
