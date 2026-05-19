@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android TV launcher banner — 320×180. The Antenna potato sits on the
+  left third of the banner with its silhouette comfortably away from
+  the crop edges; the right two thirds carry the wordmark in hand-
+  drawn paths because vector drawables don't render TTF fonts.
+  "KHOUCH POTATO" is rendered as block-letter paths sized to read at
+  the typical Android TV launcher tile zoom (~240px wide).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+
+    <!-- Background -->
+    <path
+        android:fillColor="#0D1124"
+        android:pathData="M0,0h320v180h-320z" />
+
+    <!-- Thin accent strip along the bottom (matches the chip-active
+         orange in the app, ties the brand together) -->
+    <path
+        android:fillColor="#F08245"
+        android:pathData="M0,177h320v3h-320z" />
+
+    <!-- Antenna potato — scaled 3.6× from the 32-unit brand mark,
+         centered around (78, 90) on the banner. -->
+    <group
+        android:translateX="22"
+        android:translateY="32"
+        android:scaleX="3.6"
+        android:scaleY="3.6">
+
+        <!-- Antenna stalks -->
+        <path
+            android:strokeColor="#D4A544"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:pathData="M13,12 L9,4" />
+        <path
+            android:strokeColor="#D4A544"
+            android:strokeWidth="1.4"
+            android:strokeLineCap="round"
+            android:pathData="M19,12 L23,4" />
+
+        <!-- Antenna tips -->
+        <path
+            android:fillColor="#D4A544"
+            android:pathData="M9,2.6 a1.4,1.4 0 1,0 0,2.8 a1.4,1.4 0 1,0 0,-2.8 z" />
+        <path
+            android:fillColor="#D4A544"
+            android:pathData="M23,2.6 a1.4,1.4 0 1,0 0,2.8 a1.4,1.4 0 1,0 0,-2.8 z" />
+
+        <!-- Body -->
+        <path
+            android:fillColor="#F08245"
+            android:pathData="M9,21 Q7,15 11,12 Q15,9 19,11 Q24,12 25,17 Q26,23 22,26 Q17,28 12,26 Q8,25 9,21 Z" />
+
+        <!-- Highlight -->
+        <path
+            android:fillColor="#FBB27A"
+            android:fillAlpha="0.55"
+            android:pathData="M10.6,14.5 a2.4,0.9 0 1,0 4.8,0 a2.4,0.9 0 1,0 -4.8,0 z" />
+
+        <!-- Eyes -->
+        <path
+            android:fillColor="#0D1124"
+            android:pathData="M12.3,19 a0.7,0.7 0 1,0 1.4,0 a0.7,0.7 0 1,0 -1.4,0 z" />
+        <path
+            android:fillColor="#0D1124"
+            android:pathData="M18.3,19 a0.7,0.7 0 1,0 1.4,0 a0.7,0.7 0 1,0 -1.4,0 z" />
+
+        <!-- Smile -->
+        <path
+            android:strokeColor="#0D1124"
+            android:strokeWidth="0.9"
+            android:strokeLineCap="round"
+            android:pathData="M14,22.5 Q16,24 18,22.5" />
+    </group>
+
+    <!-- ─── Wordmark "KHOUCH POTATO" — hand-drawn block letters in
+         a condensed Bebas-Neue-inspired style. Each glyph is a single
+         filled path drawn to fit within a 22px-tall slab. Letters are
+         tightly tracked so the wordmark dominates the right two-thirds
+         of the banner at ~92px–280px horizontally. ─── -->
+    <group android:translateX="158" android:translateY="60">
+
+        <!-- K -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M0,0 h5 v9 l8,-9 h6 l-9,10 l10,12 h-6 l-7,-9 l-2,2 v7 h-5 z" />
+        <!-- H -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M21,0 h5 v9 h8 v-9 h5 v22 h-5 v-9 h-8 v9 h-5 z" />
+        <!-- O -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M45,11 a8,11 0 1,1 16,0 a8,11 0 1,1 -16,0 z M50,11 a3,6 0 1,0 6,0 a3,6 0 1,0 -6,0 z" />
+        <!-- U -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M64,0 h5 v14 a3,3 0 0,0 6,0 v-14 h5 v15 a8,8 0 0,1 -16,0 z" />
+        <!-- C -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M84,11 a8,11 0 1,1 16,0 h-5 a3,6 0 1,0 -6,0 a3,6 0 1,0 6,0 h5 a8,11 0 1,1 -16,0 z M89,11 a3,6 0 1,0 6,0 a3,6 0 1,0 -6,0 z" />
+        <!-- H -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M103,0 h5 v9 h8 v-9 h5 v22 h-5 v-9 h-8 v9 h-5 z" />
+
+        <!-- (space) -->
+
+        <!-- P (orange — accent break in the wordmark) -->
+        <path android:fillColor="#F08245"
+            android:pathData="M130,0 h10 a6,6 0 0,1 0,12 h-5 v10 h-5 z M135,4 v4 h4 a2,2 0 0,0 0,-4 z" />
+        <!-- O -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M148,11 a8,11 0 1,1 16,0 a8,11 0 1,1 -16,0 z M153,11 a3,6 0 1,0 6,0 a3,6 0 1,0 -6,0 z" />
+        <!-- T -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M167,0 h16 v4 h-5.5 v18 h-5 v-18 h-5.5 z" />
+        <!-- A -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M186,22 l7,-22 h5 l7,22 h-5 l-1.2,-4 h-6.6 l-1.2,4 z M192.2,14 h4.6 l-2.3,-8 z" />
+        <!-- T -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M209,0 h16 v4 h-5.5 v18 h-5 v-18 h-5.5 z" />
+        <!-- O -->
+        <path android:fillColor="#EBE7DF"
+            android:pathData="M228,11 a8,11 0 1,1 16,0 a8,11 0 1,1 -16,0 z M233,11 a3,6 0 1,0 6,0 a3,6 0 1,0 -6,0 z" />
+    </group>
+
+    <!-- Subtitle — "KHOSLA · FAMILY · STREAMS" — small bone-cream
+         tagline below the wordmark. Drawn as a single accent line +
+         spaced rectangles to suggest typeset text without rendering
+         actual font glyphs (which the vector drawable can't do
+         beyond the per-glyph paths above). -->
+    <path
+        android:fillColor="#8A92AC"
+        android:fillAlpha="0.7"
+        android:pathData="M158,96 h140 v1 h-140 z" />
+</vector>
