@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MediaRouteButton crashes its own constructor if the host
+         context's `colorPrimary` is translucent (or the default 0,
+         which is the case under android:Theme.Material.NoActionBar).
+         Wrapping the button's context in this theme gives it the
+         Marquee orange to compute contrast against. -->
+    <style name="Theme.KhouchMediaRoute" parent="Theme.MediaRouter">
+        <item name="android:colorPrimary">#F08245</item>
+        <item name="android:colorAccent">#F08245</item>
+    </style>
+</resources>

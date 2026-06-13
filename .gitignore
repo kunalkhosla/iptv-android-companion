@@ -1,0 +1,35 @@
+# Gradle
+.gradle/
+build/
+**/build/
+out/
+captures/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+local.properties
+
+# Kotlin
+.kotlin/
+
+# Signing / secrets
+*.jks
+*.keystore
+release.keystore
+# …but DO track the shared project debug keystore. Debug builds
+# aren't security-relevant; checking it in is what lets local builds
+# and CI builds produce APKs with matching signatures so a phone or
+# TV can update in place instead of forcing an uninstall.
+!keystore/debug.keystore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated
+app/release/
+app/debug/
+
+# Gradle wrapper jar is committed so cloning + building doesn't
+# require a system Gradle install — just a JDK + Android SDK.
